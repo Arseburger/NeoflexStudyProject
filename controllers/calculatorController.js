@@ -12,16 +12,16 @@ const calculate = (req, res) => {
     let result
     switch (operation) {
         case 'plus':
-            result = Number(num1) + Number(num2)
+            result = (Number(num1) * 10 + Number(num2) * 10) / 10
             break
         case 'minus':
-            result = Number(num1) - Number(num2)
+            result = (Number(num1) * 10 - Number(num2) * 10) / 10
             break
         case 'times':
-            result = Number(num1) * Number(num2)
+            result = (Number(num1) * 10 * Number(num2) * 10) / 10
             break
         case 'by':
-            result = Number(num1) / Number(num2)
+            result = (Number(num1) * 10 / Number(num2) * 10) / 10
             break
     }
 
